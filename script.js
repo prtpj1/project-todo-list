@@ -10,6 +10,7 @@ window.onload = function () {
   inputBtn.addEventListener('click', newTask);
   inputField.addEventListener('keyup', newTaskKeyUp);
   taskList.addEventListener('click', taskSelect);
+  taskList.addEventListener('dblclick', taskComplete);
 
   //Functions
   function newTask() {
@@ -34,12 +35,18 @@ window.onload = function () {
       inputField.value = '';
     }
   }
-
   function taskSelect(event) {
-    for (i=0; i < task.length; i+=1) {
-      let taskColor = task[i].style.backgroundColor = '';
+    for (i = 0; i < task.length; i += 1) {
+      task[i].style.backgroundColor = '';
     }
-    
+
     event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+  }
+  function taskComplete(event) {
+    let item = event.target;
+
+    if (item.classList[0] === 'task') {
+      item.classList.toggle('completed');
+    }
   }
 };

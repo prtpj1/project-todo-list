@@ -1,3 +1,4 @@
+/* Tags */
 * {
   font-family: sans-serif;
 }
@@ -11,10 +12,21 @@ body {
   background-color: rgb(142, 142, 253);
 }
 
+/* IDs */
 #lista-tarefas {
   margin-right: 75%;
 }
+
+/* Classes */
+.completed {
+  text-decoration: line-through;
+  
+}
+
+.select {
+  background-color: red;
+}
 .task {
   word-wrap: break-word;
-  border-bottom: 1px solid black;
+  
 }
