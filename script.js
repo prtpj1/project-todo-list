@@ -2,15 +2,18 @@ window.onload = function () {
   //DOM Selection
 
   let inputField = document.querySelector('#texto-tarefa');
-  let inputBtn = document.querySelector('#criar-tarefa');
+  let btnInput = document.querySelector('#criar-tarefa');
   let taskList = document.querySelector('#lista-tarefas');
   let task = document.getElementsByClassName('task');
+  let btnClear = document.querySelector('#apaga-tudo');
 
   //Event Listeners
-  inputBtn.addEventListener('click', newTask);
+  btnInput.addEventListener('click', newTask);
+  btnClear.addEventListener('click', clearAll);
   inputField.addEventListener('keyup', newTaskKeyUp);
   taskList.addEventListener('click', taskSelect);
   taskList.addEventListener('dblclick', taskComplete);
+
 
   //Functions
   function newTask() {
@@ -48,5 +51,17 @@ window.onload = function () {
     if (item.classList[0] === 'task') {
       item.classList.toggle('completed');
     }
+  }
+  /* function clearAll(event){
+    let item = event.target;
+
+    if (item.classList[0] === 'btn-clear') {
+      taskList.childNodes.remove();
+    }
+  } */
+
+  function clearAll(){
+    taskList.innerHTML = '';
+
   }
 };
