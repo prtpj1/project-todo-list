@@ -6,14 +6,15 @@ window.onload = function () {
   let taskList = document.querySelector('#lista-tarefas');
   let task = document.getElementsByClassName('task');
   let btnClear = document.querySelector('#apaga-tudo');
+  let btnClearCompleted = document.querySelector('#remover-finalizados');
 
   //Event Listeners
   btnInput.addEventListener('click', newTask);
   btnClear.addEventListener('click', clearAll);
+  btnClearCompleted.addEventListener('click', clearCompleted);
   inputField.addEventListener('keyup', newTaskKeyUp);
   taskList.addEventListener('click', taskSelect);
   taskList.addEventListener('dblclick', taskComplete);
-
 
   //Functions
   function newTask() {
@@ -52,16 +53,15 @@ window.onload = function () {
       item.classList.toggle('completed');
     }
   }
-  /* function clearAll(event){
-    let item = event.target;
-
-    if (item.classList[0] === 'btn-clear') {
-      taskList.childNodes.remove();
-    }
-  } */
-
-  function clearAll(){
+  function clearAll() {
     taskList.innerHTML = '';
+  }
 
+  function clearCompleted() {
+    for (i = 0; i < task.length; i += 1) {
+      if (task[i].className === 'task completed') {
+        task[i].remove();
+      }
+    }
   }
 };
