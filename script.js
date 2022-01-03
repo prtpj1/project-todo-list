@@ -3,7 +3,7 @@ window.onload = function () {
 
   let inputField = document.querySelector('#texto-tarefa');
   let btnInput = document.querySelector('#criar-tarefa');
-  let taskList = document.querySelector('#lista-tarefas');
+  let taskList = document.getElementById('lista-tarefas');
   let task = document.getElementsByClassName('task');
   let btnClear = document.querySelector('#apaga-tudo');
   let btnClearCompleted = document.querySelector('#remover-finalizados');
@@ -58,7 +58,7 @@ window.onload = function () {
   }
 
   function clearCompleted() {
-    for (i = 0; i < task.length; i += 1) {
+    for (let i = task.length - 1; i >= 0; i -= 1) {
       if (task[i].className === 'task completed') {
         task[i].remove();
       }

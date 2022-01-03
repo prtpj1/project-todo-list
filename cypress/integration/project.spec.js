@@ -333,7 +333,7 @@ describe('10 - Adicione um botão com id="apaga-tudo" que quando clicado deve ap
   });
 });
 
-describe('11 - Adicione um botão com id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista', () => {
+describe.only('11 - Adicione um botão com id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
