@@ -1,13 +1,33 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# 4º Projeto: ToDo List
+<p align="center">
+<img src="https://github.com/prtpj1/project-todo-list/blob/main/ToDo-List.png" alt="Header" />
+</p>
+<hr/>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Neste projeto, desenvolvi uma página web para a criação de uma lista de tarefas. O usuário pode adicionar, destacar ou deletar uma tarefa. Também pode limpar toda a lista de tarefas com 1 clique.
+<br>
+<hr/>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Tecnologias Utilizadas
+
+#### FrontEnd:
+
+* HTML
+* CSS
+* JavaScript
+
+<img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/html2.png" width="50" height="50" alt="HTML" /><img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/CSS2.png" width="50" height="50" alt="CSS" /><img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/JavaScript2.png" width="50" height="50" alt="CSS" />
+
+
+## Link para visualizar o site do projeto:
+
+[Site do Projeto](https://prtpj1.github.io/project-todo-list/)
+
+## Como rodar a aplicação?
+
+1. Clone o repositório: <br>
+`git clone git@github.com:prtpj1/project-todo-list.git` 
+
+2. Inicie a aplicação: <br>
+`abra no seu navegador o arquivo index.html` 
+<br>
