@@ -24,11 +24,11 @@ Neste projeto, desenvolvi uma página web para a criação de uma lista de taref
 [Site do Projeto](https://prtpj1.github.io/project-todo-list/)
 
 ## Como rodar a aplicação?
-
-1. Clone o repositório: <br>
+- Clone o repositório: <br>
 `git clone git@github.com:prtpj1/project-todo-list.git` 
-
-2. Inicie a aplicação: <br>
+- Acesse a pasta do projeto: <br>
+`cd project-todo-list`
+- Inicie a aplicação: <br>
 `abra no seu navegador o arquivo index.html` 
 </br>
 </br>
